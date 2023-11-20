@@ -1,0 +1,21 @@
+<!-- hash? 특별한 구분으로 접근 -->
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+  <a href="#3">there</a>
+  <p id="one">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis corporis aperiam temporibus placeat! Quia reiciendis commodi optio voluptatum, enim cumque nesciunt quisquam accusantium mollitia, voluptas dicta consectetur doloribus soluta ullam?
+  </p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi excepturi eos distinctio quae exercitationem architecto saepe eius qui. Praesentium in doloribus saepe dolorem quis beatae perferendis natus nobis recusandae.
+  </p>
+  <p id="three">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi excepturi eos distinctio quae exercitationem architecto saepe eius qui. Praesentium in doloribus saepe dolorem quis beatae perferendis natus nobis recusandae.
+  </p>
+  <script>
+    if(location.hash){
+      console.log(location.hash.substr(1)); //three
+    }else{
+
+    }
+  </script>
+</body>
+</html>

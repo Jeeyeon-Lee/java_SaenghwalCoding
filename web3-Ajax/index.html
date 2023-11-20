@@ -7,14 +7,14 @@
   <script src="colors.js"></script>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
+  <h1><a href="#welcome">WEB</a></h1>
   <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
   <ol>
-    <li><a onclick="fetch(html)">HTML</a></li>
-    <li><a onclick="fetch(css)">CSS</a></li>
-    <li><a onclick="fetch(JavaScript)">JavaScript</a></li>
+    <li><a href="#!html" onclick="fetch(html)">HTML</a></li>
+    <li><a href="#!css" onclick="fetch(css)">CSS</a></li>
+    <li><a href="#!javascript" onclick="fetch(JavaScript)">JavaScript</a></li>
   </ol>
   <article></article>
   <script>
@@ -24,6 +24,11 @@
         document.querySelector('article').innerHTML = text
       })
     })
+  }
+  if(location.hash){
+    fetchPage(location.hasg.substr(2))
+  }else{
+    fetchPage('welcome')
   }
   </script>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in cumque ipsam consequuntur deserunt repudiandae? Beatae ex commodi cupiditate esse illum nobis veniam distinctio soluta, unde quidem mollitia quo exercitationem?</p>
